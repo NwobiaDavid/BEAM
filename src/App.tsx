@@ -1,19 +1,20 @@
-import './App.css'
-import Heropage from './components/Heropage'
-import Header from './components/header'
-import Navbar from './components/Navbar'
-
+import './App.css';
+import Heropage from './components/Heropage';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Categories from './components/Categories';
 
 function App() {
-
   return (
     <>
-   <Header />
-      <h2>hey</h2>
-      <Navbar />
-      <Heropage/>
+      <div className="px-[10%]">
+        <Header />
+        <Navbar />
+      </div>
+      <Categories />
+      <Heropage />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
