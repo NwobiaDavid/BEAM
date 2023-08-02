@@ -42,7 +42,7 @@ export default function Navbar() {
           />
           <button
             type="submit"
-            className="absolute left-[80%] w-[20%] rounded-e-full bg-red-500 text-white h-full "
+            className="absolute left-[80%] w-[20%] rounded-e-full hover:bg-red-600 duration-200 bg-red-500 text-white h-full "
             name="search"
           >
             Search
@@ -52,15 +52,15 @@ export default function Navbar() {
 
       <div>
         <div className="flex capitalize">
-          <div className="flex items-center">
+          <a href='#' className="flex items-center px-2 py-1 hover:shadow-sm">
             <AiOutlineUser size={35} />
             <div className='ml-1'>
               <p>my account</p>
               <p>Login/Register</p>
             </div>
-          </div>
+          </a>
 
-          <div className="ml-3 flex items-center">
+          <div className="ml-3 flex items-center px-2 py-1 hover:shadow-sm">
             <AiOutlineShoppingCart size={35} />
             <div className='ml-1'>
               <p>my cart</p>
