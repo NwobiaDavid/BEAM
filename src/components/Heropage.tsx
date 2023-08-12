@@ -1,4 +1,8 @@
 // import Swiper core and required modules
+import one from '/src/assets/cat-boot-1-1650x550.png';
+import two from '/src/assets/merrell-1650x550.png';
+import three from '/src/assets/merrell_continum-1650x550.png';
+
 import {
   Navigation,
   Pagination,
@@ -32,23 +36,18 @@ export default function Heropage() {
         onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide>
-          <div className=" h-[40rem] font-semibold flex justify-center items-center bg-red-200">
-            <h1>Slide 1</h1>
+          <div style={{backgroundImage: `url(${one})`}} className=" h-[35rem] font-semibold flex justify-center items-center bg-red-200">
+            {/* <h1>Slide 1</h1> */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className=" h-[40rem] font-semibold flex justify-center items-center bg-blue-200">
-            <h1>Slide 2</h1>
+          <div style={{backgroundImage: `url(${two})`}} className=" h-[35rem] font-semibold flex justify-center items-center bg-blue-200">
+            {/* <h1>Slide 2</h1> */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className=" h-[40rem] font-semibold flex justify-center items-center bg-lime-200">
-            <h1>Slide 3</h1>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className=" h-[40rem] font-semibold flex justify-center items-center bg-purple-200">
-            <h1>Slide 4</h1>
+          <div style={{backgroundImage: `url(${three})`}} className=" h-[35rem] font-semibold flex justify-center items-center bg-lime-200">
+            {/* <h1>Slide 3</h1> */}
           </div>
         </SwiperSlide>
       </Swiper>
